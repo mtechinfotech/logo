@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 80">
+  <defs>
+    <!-- Gradient for MB and text -->
+    <linearGradient id="mbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3136fd"/>
+      <stop offset="50%" stop-color="#7b2ff7"/>
+      <stop offset="100%" stop-color="#ff2e91"/>
+    </linearGradient>
+
+    <style>
+      .gradient { 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-weight: bold; 
+        fill: url(#mbGradient); 
+      }
+    </style>
+  </defs>
+
+  <!-- MB letters on the left -->
+  <g fill="url(#mbGradient)" transform="translate(0,0) scale(0.44)">
+    <!-- M blocky -->
+    <path d="M1 180V20h30l30 60 30-60h30v160h-30V80l-30 60-30-60v100H20z"/>
+    
+    <!-- B stylized -->
+    <path d="M130 20h40c25 0 40 15 40 35s-12 33-32 35c22 2 34 16 34 36 0 26-18 54-52 54h-30V20zm28 28v34h12c11 0 20-7 20-17s-9-17-20-17h-12zm0 60v44h14c12 0 22-9 22-22s-10-22-22-22h-14z"/>
+  </g>
+
+  <!-- "MTech Billing" text vertically centered next to MB -->
+  <text x="100" y="55" font-size="35" class="gradient" text-anchor="start">MTech Billing</text>
+</svg>
